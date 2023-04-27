@@ -1,0 +1,94 @@
+namespace Library
+{
+    public class ZadanieOne
+    {
+        public void One()
+        {
+        
+    static int[] BubbleSort(int[] array)
+    {
+        var len = array.Length;
+        for (var i = 1; i < len; i++)
+        {
+            for (var j = 0; j < len - i; j++)
+            {
+                if (array[j] > array[j + 1])
+                {
+                    Swap(ref array[j], ref array[j + 1]);
+                }
+            }
+        }
+
+        return array;
+    }
+
+    static void Main(string[] args)
+    {
+        
+        Console.Write("Введите числа: ");
+        var parts = Console.ReadLine().Split(new[] { " ", ",", ";" }, StringSplitOptions.RemoveEmptyEntries);
+        var array = new int[parts.Length];
+        for (int i = 0; i < parts.Length; i++)
+        {
+            array[i] = Convert.ToInt32(parts[i]);
+        }
+
+        Console.WriteLine("Отсортированные числа: {0}", string.Join(", ", BubbleSort(array)));
+
+        Console.ReadLine();
+    }
+}
+          
+    }
+    public class ZadanieTwo
+    {
+        public static void Two()
+        {
+        using System;
+public class DrawHollowSquare
+{
+    public static void Main(string[] args)
+    {
+        int symbol = Convert.ToInt32(Console.ReadLine());
+        int width = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите нечетное число N: ");
+            int n = int.Parse(Console.ReadLine());
+            if (n % 2 == 0) // If N is an even number, exit the function.
+            {
+                Console.WriteLine("Вы ввели четное N.");
+                return;
+                         }            
+            for (int row = 1; row <= n; row++) {
+                for (int col = 1; col <= n; col++) {
+                    if (row == n / 2 + 1 && col == n / 2 + 1) Console.Write(" ");
+                    else Console.Write("#");    
+                
+        for (int i = 0; i < width; i++)
+        {
+            Console.Write(symbol);
+        }
+ 
+        Console.WriteLine();
+ 
+        for (int i = 0; i < width - 2; i++)
+        {
+            Console.Write(symbol);
+ 
+            for (int j = 0; j < width - 2; j++)
+            {
+                Console.Write(" ");
+            }
+ 
+            Console.WriteLine(symbol);
+        }
+ 
+        for (int i = 0; i < width; i++)
+        {
+            Console.Write(symbol);
+        }
+ 
+        Console.WriteLine();
+    }
+}
+             
